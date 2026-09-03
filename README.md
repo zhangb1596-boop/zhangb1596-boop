@@ -1,6 +1,6 @@
-# 👋 Hi，我是 FLYKU（张堡）
+# 👋 Hi，我是 FLYKU
 
-**自动化 / AI 应用开发工程师** ｜ 泉州职业技术大学 · 软件工程（本科 2025 届）  
+**自动化 / AI 应用开发工程师** ｜ 泉州职业技术大学 · 软件工程（本科 2021 届）  
 专注把「官方开放平台 API + RPA + AI(MCP/Agent)」串成能落地的业务闭环，2 年在跨境电商企业独立交付 **26+ 个自动化 / AI 系统**并持续在线运行。
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
