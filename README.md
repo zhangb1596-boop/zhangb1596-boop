@@ -3,20 +3,13 @@
 **自动化 / AI 应用开发工程师** ｜ 泉州职业技术大学 · 软件工程（本科 2025 届）  
 专注把「官方开放平台 API + RPA + AI(MCP/Agent)」串成能落地的业务闭环，2 年在跨境电商企业独立交付 **26+ 个自动化 / AI 系统**并持续在线运行。
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python\&logoColor=white)
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi\&logoColor=white)
-
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![APScheduler](https://img.shields.io/badge/APScheduler-定时调度-1E8E3E)
-
 ![RPA](https://img.shields.io/badge/RPA-影刀-FF6A00)
-
 ![飞书](https://img.shields.io/badge/飞书-lark--oapi-3370FF)
-
 ![金蝶苍穹](https://img.shields.io/badge/金蝶苍穹-OpenAPI-00498F)
-
 ![MCP](https://img.shields.io/badge/MCP-Server-7C3AED)
-
 ![AI Agent](https://img.shields.io/badge/AI-Agent%20落地-10B981)
 
 
@@ -39,6 +32,19 @@
 - **开放平台 API**：金蝶云苍穹 Open API ｜ 飞书 lark-oapi（多维表/机器人/审批）｜ TikTok Shop / Shopee / Lazada ｜ 巨量千川 ｜ 千易
 - **AI 应用**：自建 **MCP Server**（ERP 业务数据标准化给 AI）· AI Agent 定时协同 · Vibe Coding 提效
 - **RPA / 自动化**：影刀 RPA + Python 处理无 API 场景（网页模拟、PDF 解析、Excel 处理、多账号调度）
+
+---
+
+## 🧪 开源 Demo（去标识 · 可运行 · 开箱即跑）
+
+> 把内部系统提炼成**不含任何公司信息**的最小骨架，`clone` 下来就能跑，代码即简历。
+
+| Demo 仓库 | 一句话 | 技术亮点 |
+| --- | --- | --- |
+| [erp-feishu-sync](https://github.com/zhangb1596-boop/erp-feishu-sync) | ERP → 飞书多维表数据同步网关 · 管理端 | 注册式 `register_handler` 扩展 · 三态调度 + 失败重试 · 一键同步 |
+| [qianchuan-auth-manager](https://github.com/zhangb1596-boop/qianchuan-auth-manager) | 巨量千川 OAuth 授权账户管理页 | Token 按 6h 真实有效期状态机 · 分组健康度 · 倒计时刷新 |
+| [customs-doc-splitter](https://github.com/zhangb1596-boop/customs-doc-splitter) | 报关 PDF 自动拆分归档（CLI） | 文件名→正文两级单号提取 · 缺页容错分类 · 配置驱动多主体 |
+| [erp-image-uploader](https://github.com/zhangb1596-boop/erp-image-uploader) | Excel 嵌入图批量上传 ERP 物料 | xlsx 当 zip 解析取悬浮图 · ±1 行列容错 · 传输层可替换（离线可测） |
 
 ---
 
@@ -170,7 +176,7 @@
 
 **规则识别**
 
-- 支持两套公司的个性化合同号格式（**JYJ / XM 前缀 + 国家码 + 8 位日期 + 可选后缀**，如 JYJTG20241230）
+- 单据号规则按**公司个性化**配置（公司前缀 + 国家码 + 8 位日期 + 可选后缀），规则独立成配置文件，新增业务主体无需改代码即可接入
 - 对模糊 / 翻转扫描件容错，单据顺序不固定 / 单据不齐全均可处理
 
 **自动化链路明细**
@@ -228,7 +234,7 @@
 **物流 / 采购 / 人事侧**
 
 - 报关委托 PDF 拆分归档、仓库报废 SKU、海运单日期回填、货代发票归档命名
-- JYJ 订单模板打印、千易售后单号匹配
+- 订单模板批量打印（多主体订单）、千易售后单号匹配
 - BOSS 直聘自动打招呼
 
 **工程化细节**
@@ -246,9 +252,9 @@
 
 | 部门   | 工具 / 流程                | 说明                      |
 | ---- | ---------------------- | ----------------------- |
-| 财务   | 紫鸟自动提款（菲律宾 / 云迁）       | 紫鸟浏览器多账号自动提款            |
+| 财务   | 紫鸟自动提款（东南亚 / 多主体）      | 紫鸟浏览器多账号自动提款            |
 | 财务   | TikTok 广告后台 BC 交易导出    | 广告交易记录自动导出              |
-| 财务   | 报关单及采购发票采集（虾麦 / 云迁）    | 报关单 / 采购发票自动采集          |
+| 财务   | 报关单及采购发票采集（多业务主体）     | 报关单 / 采购发票自动采集          |
 | 财务   | 店铺平台数据下载               | TikTok / Lazada 店铺数据下载  |
 | 财务   | 出口发票归档命名               | 出口发票自动归档命名              |
 | 财务   | 报关单详情数据收集              | 报关单详情自动收集               |
@@ -256,12 +262,12 @@
 | 运营   | Shopee 菲律宾站利润测算        | 覆盖 200+ 店铺利润测算          |
 | 运营   | Shopee 菲律宾站差评删除        | 差评自动删除                  |
 | 运营   | Shopee 泰国站每日活动提报       | 每日活动自动提报                |
-| 物流   | 报关委托 PDF 拆分归档（V1 → V4） | JYJ / XM 识别 + 容错 + GUI  |
+| 物流   | 报关委托 PDF 拆分归档（V1 → V4） | 公司个性化单号识别 + 容错 + GUI |
 | 物流   | 仓库报废 SKU               | 报废 SKU 批量处理             |
 | 物流   | 海运单回填国内日期              | 海运单日期自动回填               |
 | 物流   | 货代发票自动归档命名             | 货代发票自动归档命名              |
 | 采购   | 系统售后单号匹配（千易）           | 售后单号与系统自动匹配             |
-| 采购   | JYJ 订单打印模板 V2          | 订单模板批量打印                |
+| 采购   | 订单打印模板 V2             | 订单模板批量打印                |
 | 开发   | 金蝶物料图片批量上传（GUI）        | 图片批量绑定物料编码              |
 | 开发   | 千易商品 SKU 校验导入          | SKU 校验后批量导入             |
 | 开发   | 定时 SKU 图片导入千易并推送       | 定时同步 + 推送               |
